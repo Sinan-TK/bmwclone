@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 87vh;  
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.292), rgba(0, 0, 0, 0)),url(bmwimages/front.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.left-head{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-start; 
+    align-items: center;
+}
+.main ul li{
+    flex: 1;
+    text-align: center;
+} 
+.main ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.right-head ul li{
+    flex: 1;
+    text-align: center;
+}
+.right-head ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 12px;
+    position: relative;
+}
+.header hr{
+    margin-left: 5%;
+    margin-right: 5%;
+}   
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 13px 5%; 
+    align-items: center;
+}
+.main ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+.main ul li::after{
+    content: '';
+    height: 4px;
+    width: 100%;
+    background: rgb(0, 128, 255);
+    position: absolute;
+    left: 0%;
+    bottom: -22px;
+    opacity: 0;
+    transition: all 0.5;
+}
+.main ul li:hover::after{
+    opacity: 1;
+}
+.right-head ul li::after{
+    content: '';
+    height: 4px;
+    width: 100%;
+    background: rgb(0, 128, 255);
+    position: absolute;
+    left: 0%;
+    bottom: -18px;
+    opacity: 0;
+    transition: all 0.5;
+}
+.right-head ul li:hover::after{
+    opacity: 1;
+}
+
+.text{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+}
+#up{
+    font-size: 32px;
+    top: -55px;
+    left: 10px;
+    position: absolute;
+}
+#down{
+    font-size: 18px;
+    bottom: 40%;
+    left: 10px;
+    position: absolute;
+}
+.discover{
+    display: inline;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid rgb(9, 116, 255);
+    padding: 11px 4.5%;
+    border-radius: 3px;
+    bottom: -50px;
+    left: 10px;
+    font-size: 13px;
+    background: rgb(9, 116, 255);
+    position: absolute;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+.discover:hover{
+    border: 1px solid rgb(78, 119, 255);
+    background: rgb(78, 119, 255);
+}
+.white{
+    font-family: "Lato", sans-serif;
+}
+.find p{
+    padding-top: 2.5%;
+    padding-left: 43%;
+    padding-bottom: 2%;
+    font-size: 35px;
+}
+.icon-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 0% 17%;
+}
+.icons img{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
+}
+.icons p{
+    text-align: center;
+    font-size: 25px;
+}
+.icons a{
+    display: flex;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 15px 20px;
+    font-size: 20px;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+.icons a:hover{
+    border: 3px solid black;
+}
+.post1{
+    margin-top: 3%;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.877),#0000) ,url(bmwimages/X5-7_3to1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    padding: 16% ;
+    font-family: "Poppins", sans-serif;
+} 
+.post1 div p{    
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+.post1dis{
+    display: inline;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid white;
+    padding: 14px 8%;
+    border-radius: 5px;
+    bottom: 28%;
+    left: 5.5%;
+    /* font-size: 13px; */
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
+    font-size: 17px;
+}
+.post1dis:hover{
+    border: 3px solid white;
+}
+.post2{
+    margin-top: 2%;
+    background: linear-gradient(to right,black,rgba(0, 0, 0, 0.829),rgba(0, 0, 0, 0.185),rgba(0, 0, 0, 0),#0000) ,url(bmwimages/x3-mobile-banner-image-1_3to1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.post2 div{
+    padding: 16.5%;
+    font-family: "Poppins", sans-serif;
+}
+.post2 div p{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+.post2dis{
+    color: #fff;
+    text-decoration: none;
+    bottom: 28%;
+    position: absolute;
+    left: 5.5%;
+    display: inline;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 14px 8%;
+    background: transparent;
+    cursor: pointer;
+}
+.post2dis:hover{
+    border: 3px solid white;
+}
+.post3{
+    margin-top: 2%;
+    background:linear-gradient(to top,black,rgba(0, 0, 0, 0.884),rgba(0, 0, 0, 0.301),rgba(0, 0, 0, 0),#0000,rgba(0, 0, 0, 0)), url(bmwimages/DI21_000048047_3000_3000_3to1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.post3 div{
+    padding: 16%;
+    font-family: "Poppins", sans-serif;
+}
+.post3 div p{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    bottom: 17%;
+    left: 50%;
+    font-size: 32px;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+.post3dis{
+    color: #fff;
+    text-decoration: none;
+    bottom: 7%;
+    position: absolute;
+    left: 5%;
+    display: inline;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 12px 8%;
+    background: black;
+    cursor: pointer;
+}
+.post3dis:hover{
+    border: 3px solid white;
+}
+.post4{
+    margin-top: 2%;
+    background:linear-gradient(to top,black,rgba(0, 0, 0, 0.884),rgba(0, 0, 0, 0.301),rgba(0, 0, 0, 0),#0000,rgba(0, 0, 0, 0)), url(bmwimages/iX_Banner1_3to1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.post4 div{
+    padding: 16%;
+    font-family: "Poppins", sans-serif;
+}
+.post4 div p{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    bottom: 11%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+.post4dis{
+    color: #fff;
+    text-decoration: none;
+    bottom: 7%;
+    position: absolute;
+    left: 5%;
+    display: inline;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 12px 8%;
+    background: black;
+    cursor: pointer;
+}
+.post4dis:hover{
+    border: 3px solid white;
+}
+.post5{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+/*}
+.post5{ */
+
+    display: flex;
+
+}
+.post5img{
+    position: relative;
+    width: 66%;
+}
+.post5text{
+    position: absolute;
+    right: 3%;
+    padding: 11% 3.5%;
+
+}
+.post5text p{
+    font-family: "Poppins", sans-serif;
+}
+.post5know{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+.post5know:hover{
+    color: rgb(41, 41, 196);
+}
+.BMW{
+    display: flex;
+    padding: 2% 5%;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+.all{
+    text-decoration: none;
+    color: #000000;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+.all:hover{
+    color: rgb(41, 41, 196);
+}
+.endtext{
+    margin-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15%;
+    position: relative;
+}
+.endtexts ul {
+    list-style-type: none;
+}
+
+.endtexts ul li a{
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+}
+.endtexts ul li a:hover{
+    color: rgb(41, 41, 196);
+}
+.endtexts h4{
+     font-family: "Poppins", sans-serif;
+     font-size: 12px;
+}
+.end{
+    padding-top: 4%;
+    padding-bottom: 2.5%;
+    position: relative;
+    background:linear-gradient(to right,rgba(219, 215, 215, 0.445),rgba(219, 215, 215, 0.534),rgba(219, 215, 215, 0.534),rgba(219, 215, 215, 0.445));
+}
+.media{
+    margin-left: 5%;
+    margin-top: 4.5%;
+}
+.media ul{
+    list-style-type: none;
+}
+.media ul{
+    display: flex;
+    justify-content: flex-start;
+    gap: 28px;
+    align-items: center;
+}
+.brand{
+    margin-top: 0.5%;
+    margin-left: 4%;
+    margin-bottom: 0.5%;
+    margin-right: 4%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+.legal {
+    display: flex;
+    flex-direction: row;
+}
+.legal a{
+    color: #000000;
+    text-decoration: none;
+    justify-content: space-around;
+    padding: 10px 12px;
+    position: relative;
+    font-size: 13px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+.copy p {
+    font-size: 18px;
+}
+.legal a:hover{
+    color: rgb(41, 41, 196);
+}
+.tele{
+    position:fixed;
+    right: 3%;
+    bottom:21%;
+    padding: 7px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: white;
+}
+.hov{
+    position:fixed;
+    right: 3%;
+    bottom:21%;
+    padding: 7px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: white;
+    opacity: 0;
+    transition: 0.2s;
+}
+.hov:hover{
+    opacity: 1;
+}
+
